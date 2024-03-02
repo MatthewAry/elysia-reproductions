@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig.json",
+  "compilerOptions": {
+    "incremental": true,
+    "esModuleInterop": true,
+    // "declaration": false,
+    // "emitDeclarationOnly": true,
+    "lib": ["ESNext"],
+    "target": "esnext",
+    // regarding module/moduleResolution https://x.com/mattpocockuk/status/1724462050288587123?s=20
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    // "moduleDetection": "force",
+    // "allowImportingTsExtensions": true,
+    "noEmit": true,
+    // "composite": true,
+    "strict": true,
+    "downlevelIteration": true,
+    "skipLibCheck": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "allowJs": true,
+    "types": [
+      "bun-types" // add Bun global
+    ],
+    "baseUrl": ".",
+    "noErrorTruncation": true
+  },
+  "exclude": ["**/node_modules"]
+}

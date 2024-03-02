@@ -1,0 +1,8 @@
+{
+  "name": "front",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "@elysiajs/eden": "1.0.0-rc.0"
+  }
+}

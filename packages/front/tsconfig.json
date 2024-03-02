@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig.json",
+  "extends": ["../../tsconfig.base.json"],
+  "compilerOptions": {
+    "sourceMap": false,
+    "paths": {
+      "@back/*": ["./packages/back/src/*"]
+    },
+    "rootDir": "../..",
+    "isolatedModules": true
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.json",
+    "../back/**/*.ts",
+    "src/**/*.d.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue"
+  ],
+  "exclude": ["**/node_modules"],
+  // This forces TS to include DOM types
+  "files": ["./node_modules/typescript/lib/lib.dom.d.ts"]
+  // "references": [
+  //   { "path": "../back" }
+  // ]
+}

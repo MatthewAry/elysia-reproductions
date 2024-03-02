@@ -1,0 +1,84 @@
+lockfileVersion: '6.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .: {}
+
+  packages/back:
+    dependencies:
+      '@elysiajs/server-timing':
+        specifier: 1.0.0-rc.0
+        version: 1.0.0-rc.0(elysia@1.0.0-rc.0)
+      elysia:
+        specifier: 1.0.0-rc.0
+        version: 1.0.0-rc.0(@sinclair/typebox@0.32.15)
+
+  packages/front:
+    dependencies:
+      '@elysiajs/eden':
+        specifier: 1.0.0-rc.0
+        version: 1.0.0-rc.0(elysia@1.0.0-rc.0)
+
+packages:
+
+  /@elysiajs/eden@1.0.0-rc.0(elysia@1.0.0-rc.0):
+    resolution: {integrity: sha512-1b3kcQe8VymbzFxAI7sSoJzcUenENnF90oQLkg3fY6qkHCaIaLW7fJNFu8PQl0H4IFr1px9Vsi2fZP+WzWofeQ==}
+    peerDependencies:
+      elysia: '>= 1.0.0-rc.0'
+    dependencies:
+      elysia: 1.0.0-rc.0(@sinclair/typebox@0.32.15)
+    dev: false
+
+  /@elysiajs/server-timing@1.0.0-rc.0(elysia@1.0.0-rc.0):
+    resolution: {integrity: sha512-CF73+RpNFUUIvilOj4znMu4K9jKuSoJnGn3U0SMSMsY5Xy5rqj92D+7SMgqa3P7QcXHQFwWC0mWgDvr3lRKuwQ==}
+    peerDependencies:
+      elysia: '>= 1.0.0-rc.0'
+    dependencies:
+      elysia: 1.0.0-rc.0(@sinclair/typebox@0.32.15)
+    dev: false
+
+  /@sinclair/typebox@0.32.15:
+    resolution: {integrity: sha512-5Lrwo7VOiWEBJBhHmqNmf3TPB9ll8gcEshvYJyAIJyCZ2PF48MFOtiDHJNj8+FsNcqImaQYmxVkKBCBlyAa/wg==}
+    dev: false
+
+  /cookie@0.6.0:
+    resolution: {integrity: sha512-U71cyTamuh1CRNCfpGY6to28lxvNwPG4Guz/EVjgf3Jmzv0vlDp1atT9eS5dDjMYHucpHbWns6Lwf3BKz6svdw==}
+    engines: {node: '>= 0.6'}
+    dev: false
+
+  /elysia@1.0.0-rc.0(@sinclair/typebox@0.32.15):
+    resolution: {integrity: sha512-5+JNUEXz2IIks6XX+tGQVGdcaQo5lw9zE7t2mV2qQTytWLTi+tg2fRQ2/xJCS9AelFeOTB/40P10v1pnjNdq9Q==}
+    peerDependencies:
+      '@sinclair/typebox': '>= 0.31.0'
+      openapi-types: '>= 12.0.0'
+      typescript: '>= 5.0.0'
+    peerDependenciesMeta:
+      openapi-types:
+        optional: true
+      typescript:
+        optional: true
+    dependencies:
+      '@sinclair/typebox': 0.32.15
+      cookie: 0.6.0
+      eventemitter3: 5.0.1
+      fast-decode-uri-component: 1.0.1
+      fast-querystring: 1.1.2
+    dev: false
+
+  /eventemitter3@5.0.1:
+    resolution: {integrity: sha512-GWkBvjiSZK87ELrYOSESUYeVIc9mvLLf/nXalMOS5dYrgZq9o5OVkbZAVM06CVxYsCwH9BDZFPlQTlPA1j4ahA==}
+    dev: false
+
+  /fast-decode-uri-component@1.0.1:
+    resolution: {integrity: sha512-WKgKWg5eUxvRZGwW8FvfbaH7AXSh2cL+3j5fMGzUMCxWBJ3dV3a7Wz8y2f/uQ0e3B6WmodD3oS54jTQ9HVTIIg==}
+    dev: false
+
+  /fast-querystring@1.1.2:
+    resolution: {integrity: sha512-g6KuKWmFXc0fID8WWH0jit4g0AGBoJhCkJMb1RmbsSEUNvQ+ZC8D6CUZ+GtF8nMzSPXnhiePyyqqipzNNEnHjg==}
+    dependencies:
+      fast-decode-uri-component: 1.0.1
+    dev: false

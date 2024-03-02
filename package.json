@@ -1,0 +1,13 @@
+{
+  "name": "playground",
+  "version": "0.0.0",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "start-back": "cd packages/back;bun start",
+    "dev-back": "cd packages/back;bun dev"
+  },
+  "dependencies": {}
+}
