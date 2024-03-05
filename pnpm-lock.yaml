@@ -12,46 +12,75 @@ importers:
     dependencies:
       '@elysiajs/server-timing':
         specifier: 1.0.0-rc.0
-        version: 1.0.0-rc.0(elysia@1.0.0-rc.0)
+        version: 1.0.0-rc.0(elysia@1.0.0-rc.2)
       elysia:
-        specifier: 1.0.0-rc.0
-        version: 1.0.0-rc.0(@sinclair/typebox@0.32.15)
+        specifier: 1.0.0-rc.2
+        version: 1.0.0-rc.2(@sinclair/typebox@0.32.15)
+    devDependencies:
+      '@types/bun':
+        specifier: ^1.0.8
+        version: 1.0.8
 
   packages/front:
     dependencies:
       '@elysiajs/eden':
         specifier: 1.0.0-rc.0
-        version: 1.0.0-rc.0(elysia@1.0.0-rc.0)
+        version: 1.0.0-rc.0(elysia@1.0.0-rc.2)
 
 packages:
 
-  /@elysiajs/eden@1.0.0-rc.0(elysia@1.0.0-rc.0):
+  /@elysiajs/eden@1.0.0-rc.0(elysia@1.0.0-rc.2):
     resolution: {integrity: sha512-1b3kcQe8VymbzFxAI7sSoJzcUenENnF90oQLkg3fY6qkHCaIaLW7fJNFu8PQl0H4IFr1px9Vsi2fZP+WzWofeQ==}
     peerDependencies:
       elysia: '>= 1.0.0-rc.0'
     dependencies:
-      elysia: 1.0.0-rc.0(@sinclair/typebox@0.32.15)
+      elysia: 1.0.0-rc.2(@sinclair/typebox@0.32.15)
     dev: false
 
-  /@elysiajs/server-timing@1.0.0-rc.0(elysia@1.0.0-rc.0):
+  /@elysiajs/server-timing@1.0.0-rc.0(elysia@1.0.0-rc.2):
     resolution: {integrity: sha512-CF73+RpNFUUIvilOj4znMu4K9jKuSoJnGn3U0SMSMsY5Xy5rqj92D+7SMgqa3P7QcXHQFwWC0mWgDvr3lRKuwQ==}
     peerDependencies:
       elysia: '>= 1.0.0-rc.0'
     dependencies:
-      elysia: 1.0.0-rc.0(@sinclair/typebox@0.32.15)
+      elysia: 1.0.0-rc.2(@sinclair/typebox@0.32.15)
     dev: false
 
   /@sinclair/typebox@0.32.15:
     resolution: {integrity: sha512-5Lrwo7VOiWEBJBhHmqNmf3TPB9ll8gcEshvYJyAIJyCZ2PF48MFOtiDHJNj8+FsNcqImaQYmxVkKBCBlyAa/wg==}
     dev: false
 
+  /@types/bun@1.0.8:
+    resolution: {integrity: sha512-E6UWZuN4ymAxzUBWVIGDHJ3Zey7I8cMzDZ+cB1BqhZsmd1uPb9iAQzpWMruY1mKzsuD3R+dZPoBkZz8QL1KhSA==}
+    dependencies:
+      bun-types: 1.0.29
+    dev: true
+
+  /@types/node@20.11.24:
+    resolution: {integrity: sha512-Kza43ewS3xoLgCEpQrsT+xRo/EJej1y0kVYGiLFE1NEODXGzTfwiC6tXTLMQskn1X4/Rjlh0MQUvx9W+L9long==}
+    dependencies:
+      undici-types: 5.26.5
+    dev: true
+
+  /@types/ws@8.5.10:
+    resolution: {integrity: sha512-vmQSUcfalpIq0R9q7uTo2lXs6eGIpt9wtnLdMv9LVpIjCA/+ufZRozlVoVelIYixx1ugCBKDhn89vnsEGOCx9A==}
+    dependencies:
+      '@types/node': 20.11.24
+    dev: true
+
+  /bun-types@1.0.29:
+    resolution: {integrity: sha512-Z+U1ORr/2UCwxelIZxE83pyPLclviYL9UewQCNEUmGeLObY8ao+3WF3D8N1+NMv2+S+hUWsdBJam+4GoPEz35g==}
+    dependencies:
+      '@types/node': 20.11.24
+      '@types/ws': 8.5.10
+    dev: true
+
   /cookie@0.6.0:
     resolution: {integrity: sha512-U71cyTamuh1CRNCfpGY6to28lxvNwPG4Guz/EVjgf3Jmzv0vlDp1atT9eS5dDjMYHucpHbWns6Lwf3BKz6svdw==}
     engines: {node: '>= 0.6'}
     dev: false
 
-  /elysia@1.0.0-rc.0(@sinclair/typebox@0.32.15):
-    resolution: {integrity: sha512-5+JNUEXz2IIks6XX+tGQVGdcaQo5lw9zE7t2mV2qQTytWLTi+tg2fRQ2/xJCS9AelFeOTB/40P10v1pnjNdq9Q==}
+  /elysia@1.0.0-rc.2(@sinclair/typebox@0.32.15):
+    resolution: {integrity: sha512-fdKLMckbthuREqmp3Vv75RwOh6i9R3+4K+i6iaHg0Vu9cRdmXxz2Kzyb/80g6Dt/ih7laDaqX2shIzivE1xkPw==}
     peerDependencies:
       '@sinclair/typebox': '>= 0.31.0'
       openapi-types: '>= 12.0.0'
@@ -82,3 +111,7 @@ packages:
     dependencies:
       fast-decode-uri-component: 1.0.1
     dev: false
+
+  /undici-types@5.26.5:
+    resolution: {integrity: sha512-JlCMO+ehdEIKqlFxk6IfVoAUVmgz7cU7zD/h9XZ0qzeosSHmUJVOzSQvvYSYWXkFXC+IfLKSIffhv0sVZup6pA==}
+    dev: true
