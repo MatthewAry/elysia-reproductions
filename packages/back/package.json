@@ -7,7 +7,9 @@
     "start": "NODE_ENV=production bun src/index.ts"
   },
   "dependencies": {
-    "@elysiajs/server-timing": "1.0.0-rc.0",
-    "elysia": "1.0.0-rc.0"
+    "elysia": "1.0.0-rc.2"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.0.8"
   }
 }
